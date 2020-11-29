@@ -1,6 +1,22 @@
 <mat-sidenav-container>
     <mat-sidenav #sidenav role="navigation">
-        <p>Side Nav opened</p>
+        <div fxFlex fxLayout>
+            <ul fxLayout="column" fxLayoutAlign="stretch" class="navigation-items">
+                <li><a routerLink="/signup" (click)="sidenav.close()"><mat-icon>face</mat-icon>Signup</a></li>
+                <li><a routerLink="/login" (click)="sidenav.close()"><mat-icon>input</mat-icon>Login</a></li>
+                <li><a routerLink="/training"(click) = "sidenav.close()"><mat-icon>fitness_center</mat-icon>Training</a></li>
+                <li><a routerLink="/"(click) = "sidenav.close()"><mat-icon>eject</mat-icon>Logout</a></li>
+                <!-- <button mat-icon-button (click) = "sidenav.close()"><mat-icon>eject</mat-icon> Logout</button> -->
+            </ul>    
+         </div>
+
+        
+        <!-- <mat-nav-list>
+                                
+<a routerLink="/signup">Signup</a>
+<a routerLink="/login">Login</a>
+<a routerLink="/training">Training</a>    
+        </mat-nav-list> -->
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="primary">
@@ -13,6 +29,8 @@
                <li><a routerLink="/signup">Signup</a></li>
                <li><a routerLink="/login">Login</a></li>
                <li><a routerLink="/training">Training</a></li>
+               <li><a routerLink="/">Logout</a></li>
+
            </ul>
             
         </div>

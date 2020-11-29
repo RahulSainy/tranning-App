@@ -3,6 +3,7 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav{
 }
 mat-sidenav{
     width: 230px;
+    background-color: #3f51b5;
 }
 a{
     text-decoration: none;

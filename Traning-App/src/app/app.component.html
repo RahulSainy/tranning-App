@@ -11,12 +11,21 @@
          </div>
 
         
-        <!-- <mat-nav-list>
-                                
-<a routerLink="/signup">Signup</a>
-<a routerLink="/login">Login</a>
-<a routerLink="/training">Training</a>    
-        </mat-nav-list> -->
+         <!-- <mat-nav-list>
+            <a mat-list-item routerLink="/signup">
+              <mat-icon> face</mat-icon> Signup</a
+            >
+            <a mat-list-item routerLink="/login"> <mat-icon> face</mat-icon> input</a>
+            <a mat-list-item routerLink="/training">
+              <mat-icon> fitness_center</mat-icon> Training</a
+            >
+      
+            <mat-list-item>
+              <button mat-icon-button (click)="sidenav.close()">
+                <mat-icon>eject</mat-icon> Logout
+              </button>
+            </mat-list-item>
+          </mat-nav-list> -->
     </mat-sidenav>
     <mat-sidenav-content>
         <mat-toolbar color="primary">
@@ -29,7 +38,7 @@
                <li><a routerLink="/signup">Signup</a></li>
                <li><a routerLink="/login">Login</a></li>
                <li><a routerLink="/training">Training</a></li>
-               <li><a routerLink="/">Logout</a></li>
+               <li><a routerLink="/">Logout<mat-icon>eject</mat-icon></a></li>
 
            </ul>
             

@@ -14,6 +14,9 @@ import { PastTrainingComponent } from './training/past-training/past-training.co
 import { WelcomeComponent } from './welcome/welcome.component'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StopTrainingComponent } from './training/current-training/stop-training.component';
+import { AuthService } from './auth/auth.service';
+import { TrainingService } from './training/training.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    StopTrainingComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
     
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [AuthService, TrainingService],
+  bootstrap: [AppComponent],
+  entryComponents: [StopTrainingComponent]
 })
 export class AppModule { }

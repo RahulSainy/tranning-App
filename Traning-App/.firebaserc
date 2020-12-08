@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ng-fitness-tracker-cb4be": {
+      "hosting": {
+        "Traning-App": [
+          "ng-fitness-tracker-cb4be"
+        ]
+      }
+    }
+  }
+}

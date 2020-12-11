@@ -1,8 +1,8 @@
  <div fxFlex fxLayout>
           <ul fxLayout="column" fxLayoutAlign="stretch" class="navigation-items">
-              <li *ngIf = "!isAuth"><a routerLink="/signup" (click)="sidenav.close()"><mat-icon>face</mat-icon>Signup</a></li>
-              <li *ngIf = "!isAuth"><a routerLink="/login" (click)="sidenav.close()"><mat-icon>input</mat-icon>Login</a></li>
-              <li *ngIf = "isAuth"><a routerLink="/training"(click) = "sidenav.close()"><mat-icon>fitness_center</mat-icon>Training</a></li>
+              <li *ngIf = "!isAuth"><a routerLink="/signup" (click)="onClose()"><mat-icon>face</mat-icon>Signup</a></li>
+              <li *ngIf = "!isAuth"><a routerLink="/login" (click)="onClose()"><mat-icon>input</mat-icon>Login</a></li>
+              <li *ngIf = "isAuth"><a routerLink="/training"(click) = "onClose()"><mat-icon>fitness_center</mat-icon>Training</a></li>
               <li *ngIf = "isAuth"><a routerLink="/"(click)="onLogout()"><mat-icon>eject</mat-icon>Logout</a></li>
               <!-- <button mat-icon-button (click) = "sidenav.close()"><mat-icon>eject</mat-icon> Logout</button> -->
           </ul>    

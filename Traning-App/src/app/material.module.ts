@@ -1,5 +1,4 @@
-import {NgModule} from '@angular/core';
-import { MatSliderModule } from '@angular/material/slider';
+import { NgModule } from '@angular/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
@@ -18,40 +17,20 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatTableModule} from '@angular/material/table'
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
-@NgModule({
-    imports:[
-        MatSliderModule,
-        MatFormFieldModule,
-        MatInputModule,
-        MatButtonModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
-        MatCheckboxModule,
-        MatSidenavModule,
-        MatToolbarModule,
-        MatIconModule,
-        // MatListModule,
-        MatTabsModule,
-        MatCardModule,
-        MatSelectModule,
-        MatProgressSpinnerModule,
-        MatDialogModule,
-        MatTableModule,
-        MatSortModule,
-        MatPaginatorModule,
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
-    ],
-    exports:[
-    MatSliderModule,
+
+@NgModule({
+  imports: [
+    MatButtonModule,
+    MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule,
     // MatListModule,
     MatTabsModule,
     MatCardModule,
@@ -61,8 +40,29 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    
-]
+    MatSnackBarModule,
+  ],
+  exports: [
+    MatButtonModule,
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    // MatListModule,
+    MatTabsModule,
+    MatCardModule,
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatPaginatorModule,
+    MatSnackBarModule,
 
+  ]
 })
-export class MaterialModule{}
+export class MaterialModule {}

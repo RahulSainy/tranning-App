@@ -15,7 +15,7 @@ import { AuthService } from '../../auth/auth.service';
   styleUrls: ['./sidenav-list.component.css']
 })
 export class SidenavListComponent implements OnInit, OnDestroy {
-  @Output() closeSidenav = new EventEmitter<void>();
+  @Output() closeSidenav : EventEmitter<string> = new EventEmitter<string>();
   isAuth = false;
   authSubscription: Subscription;
 
@@ -28,7 +28,7 @@ export class SidenavListComponent implements OnInit, OnDestroy {
   }
 
   onClose() {
-    this.closeSidenav.emit();
+    this.closeSidenav.emit("close");
   }
 
   onLogout() {

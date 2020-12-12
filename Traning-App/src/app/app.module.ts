@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,9 +13,9 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { TrainingModule } from './training/training.module';
 import { AuthModule } from './auth/auth.module';
 import { UIService } from './shared/ui.service';
-import { TrainingRoutingModule } from './training/training-routing.module';
 
 
 @NgModule({
@@ -33,9 +32,8 @@ import { TrainingRoutingModule } from './training/training-routing.module';
     AppRoutingModule,
     FlexLayoutModule,
     AngularFireModule.initializeApp(environment.firebase),
+    TrainingModule,
     AuthModule,
-    AngularFirestoreModule,
-    TrainingRoutingModule,
   ],
   providers: [AuthService, TrainingService, UIService],
   bootstrap: [AppComponent]

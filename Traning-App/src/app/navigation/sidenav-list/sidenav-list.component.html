@@ -1,4 +1,5 @@
- <div fxFlex fxLayout>
+
+      <div fxFlex fxLayout>
           <ul fxLayout="column" fxLayoutAlign="stretch" class="navigation-items">
               <li *ngIf = "!isAuth"><a routerLink="/signup" (click)="onClose()"><mat-icon>face</mat-icon>Signup</a></li>
               <li *ngIf = "!isAuth"><a routerLink="/login" (click)="onClose()"><mat-icon>input</mat-icon>Login</a></li>

@@ -1,0 +1,8 @@
+mat-column-select {
+    overflow: initial;
+  }
+  mat-cell{
+      overflow: inherit;
+      padding-right: 3%;
+
+  }
